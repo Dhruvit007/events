@@ -1,0 +1,59 @@
+.contain-container {
+  position: fixed;
+  top: 25%;
+  text-align: center;
+}
+
+.yet-to-register-container {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+}
+
+.no-event-heading {
+  color: #64748b;
+  font-size: 30px;
+  font-family: 'Roboto';
+  padding-top: 40px;
+}
+
+.yet-to-register-image {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .yet-to-register-image {
+    width: 90%;
+  }
+}
+.yet-to-register-paragraph {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .yet-to-register-paragraph {
+    font-size: 14px;
+  }
+}
+.register-now-button {
+  background-color: #0967d2;
+  color: #f8fafc;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.registered-image {
+  width: 40%;
+}
+@media screen and (max-width: 767px) {
+  .registered-image {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .registered-paragraph {
+    font-size: 20px;
+  }
+}
