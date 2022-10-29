@@ -9,16 +9,12 @@ const registrationStatus = {
 }
 
 class ActiveEventRegistrationDetails extends Component {
-  state = {
-    status: registrationStatus.initial,
-  }
-
   renderNoActiveEvent = () => (
     <div className="yet-to-register-container">
       <div className="contain-container">
-        <h1 className="no-event-heading">
+        <p className="no-event-heading">
           Click on an event, to view its registration details
-        </h1>
+        </p>
       </div>
     </div>
   )
@@ -66,7 +62,7 @@ class ActiveEventRegistrationDetails extends Component {
           alt="registrations closed"
           className="registered-image"
         />
-        <h1>Registration Are Closed Now!</h1>
+        <h1 className="registered-heading">Registrations Are Closed Now!</h1>
         <p className="registered-paragraph">
           Stay tuned. We will reopen the registration soon!
         </p>
@@ -75,7 +71,7 @@ class ActiveEventRegistrationDetails extends Component {
   )
 
   render() {
-    const {status} = this.state
+    const {status} = this.props
     switch (status) {
       case registrationStatus.initial:
         return this.renderNoActiveEvent()
